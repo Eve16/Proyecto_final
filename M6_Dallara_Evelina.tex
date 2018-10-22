@@ -10,6 +10,9 @@
 \graphicspath{ {./Proyecto_final/} }
 \usepackage{afterpage}
 \usepackage{upgreek}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{caption}
 
 \begin{document}
 \title{Interacción de las erupciones
@@ -87,7 +90,37 @@ radio de los aerosoles supera los 2$\mu$m el efecto de calentamiento domina y en
 un enfriamiento en la estratosfera, que se relacion\'o con la p\'erdida de ozono, un absorbedor eficiente de radiaci\'on solar y responsable del calentamiento en la estratosfera.
 
 \section{Simulaci\'on del modelo clim\'atic de los dos a\~nos despu\'es de la erupci\'on}
+\cite{kirchner1999climate} han hecho una simulaci\'on del calientamiento y enfriamiento debido a los efectos de la erupci\'on del Pinatubo en 1991 de los sucesivos dos a\~nos. 
+\begin{table}[b]
+\centering
+\begin{tabular}{c|c|c}
+Band&Wavelenght, $\upmu$m&Description \\ \hline
+1&5.3-6.9,28.6-$\infty$&LW,water vapor absorption \\
+2&12.5-20.0&LW, $CO_{2}$ absorption\\
+3&8.0-9.0, 10.3-12.5&LW, window \\
+4&9.0-10.3&LW, ozone absorption \\
+5&20.0-28.6&LW, window \\
+6&3.6-5.3, 6.9-8.0&LW, water vapor absorption \\
+7&0.2-0.68&SW, Solar UV and Visible \\
+8&0.68-4.0&SW, Solar near IR \\ \hline
+\end{tabular}
+\caption{Resoluci\'on espectral del esquema espectral del ECHAM4.} \label{tlb:Tabla1}
+\end{table}
+En total se han hecho tres series de experimentos de los dos a\~nos utilizando diferentes \textit{sea surface temperatures} (SSTs) y para cada experimiento se han hecho cinco experimentos con aerosoles y cinco sin, con diferentes condiciones iniciales (Tabla \ref{tlb:Tabla2}).
+\begin{table}[b]
+\centering
+\begin{tabular}{c|c|c|c}
+&Climatological SST&Observed SST (El Ni\~no)&Observed SST (La Ni~na) \\ \hline
+No aerosol forcing&C&O&L\\
+With aerosol forcing&AC&AO&AL\\ \hline
+\end{tabular}
+\caption{Etiquetas de los diferentes modelos de circulaci\'on, basados en condiciones de contorno.} \label{tlb:Tabla2}
+\end{table}Para ello ha sido utilizado el modelo de circulaci\'on general ECHAM4 (GCM), basado en el modelo de previsi\'on del tiempo del \textit{Euopean Centre for Medium-Range Weather Forecasting } (ECMWF). \\El ECHAM4 incluye el esquema modificado de Morcrette con el tratamiento expl\'icito de los efectos radiativos de los aerosoles. La trasferencia radiativa se divide en seis regiones espectrales 
+y la radiaci\'on solar se divide en las bandas del visible y del cercano infrarojo (Tabla \ref{tlb:Tabla1}). 
 
+Los efectos que se han podido observar en relaci\'on de la estratosfera, donde se sit\'ua la capa de Junge, consisten en un calientamiento de la circulaci\'on estratosf\'erica que va a influir tambi\'en en las caracter\'isticas de la troposfera. 
+\\La respuesta t\'ermica debida a los aerosoles volc\'anicos en la estratosfera situada en los tr\'opicos resulta ser independiente de los diferentes SSTs. De hecho, la temperatura aumenta de unos 3-4 K, mientras que en los polos  durante el invierno la respuesta es mucho m\'as varibale. Adem\'as, la posici\'on y la magnitud de la anomal\'ia son diferentes dependiendo de los SSTs, lo que demuestra la importancia de la influencia de la troposfera, situada encima de la estratosfera. \\Las simluaciones demuestran que el efecto de la troposfera puede ser diferente para regimenes de calientamiento de la estratosfera similares, utilizando experimentos con diferentes SSTs. Por tanto, se puede decir que el vortice polar resulta ser dependiente de la circulaci\'on troposferica y entonces el aumento de la temperatura en la estratosfera no es el \'unico factor importante que puede introducir cambios significativos en la troposfera. 
+Adem\'as se pudo observar un enfriamiento durante el verano, que ha sido bien reproducido por los experimentos y un calientamiento durante el verano. En el primer caso, el enfriamiento es un efecto del del forcing radiativo de los aerosoles, mientras que el calientamiento resulta de los cambiamentos en la circulaci\'on en la troposfera, debido a la interacci\'on entre esta \'ultima y la estratosfera 
 \afterpage{\null\newpage}
 \newpage
 \bibliographystyle{apalike}
